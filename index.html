@@ -1,0 +1,106 @@
+<head>
+    <script>
+        function PicClick() {
+            alert('You clicked the picture!');
+
+        }
+
+        function sayHi() {
+            var name = document.getElementById('name').value;
+            alert('hello ' + name);
+        }
+    </script>
+    <style>
+        .bold {
+            font-weight: bold;
+            width: 100%;
+            border: 1px solid black;
+            background-color: lightgreen;
+            text-align: center
+        }
+
+        xmp {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>
+            <xmp>Use an H2 tag to create a large label for the top of your web page
+            </xmp>
+            <h2>
+                Coder Dojo Week 5 Final Project
+            </h2>
+        </li>
+        <li>
+            <xmp>Use the <div> tag with a style="width:100%;border:1px solid black" to get a box like the one below</xmp>
+            <div style="width:100%;border:1px solid black">
+                Welcome to my web page!
+            </div>
+        </li>
+        <li>
+            <xmp>Modify the style to change the background color using background-color:colorname
+            </xmp>
+            <div style="width:100%;border:1px solid black; background-color:lightgreen">
+                Welcome to my green div!
+            </div>
+        </li>
+        <li>
+            <xmp> 3) Modify the style center the text using text-align:center
+            </xmp>
+            <div style="width:100%;border:1px solid black; background-color:lightgreen; text-align:center">
+                Welcome to my green div!
+            </div>
+        </li>
+        <li>
+            <xmp>In your CSS page, make all divs bold using div { font-weight:bold }</xmp>
+            <div class="bold">
+                <xmp style="margin:0px;">All of your text should be bold in your <div> tags</xmp>
+        </li>
+        <li>
+            <xmp>While in your CSS page, give all divs bigger using padding:10px;</xmp>
+            <div class="bold">
+                <xmp style="margin:0px;padding:10px;">All of your <div> tags should have more room around the text</xmp>
+        </li>
+        <li>
+            <xmp>Add an image to your page using the <img src="https://goo.gl/rU1USQ" style="height:150px;"> tag.
+                If you remember how to, you can go to google image search and copy image url
+                to get your own image source for your image </xmp>
+            <img src="https://goo.gl/rU1USQ" style="height:150px;" onclick='PicClick()'>
+        </li>
+        <li>
+            <xmp>add an onclick='PicClick()' to your image.
+                This will allow you to click on your picture and run some javascript.
+                Note, nothing will happen yet when you click on it</xmp>
+        </li>
+        <li>
+            <xmp>In your javascript, add a function to handle your picture click.</xmp>
+            <pre><code>function PicClick(){
+    alert('You clicked the picture!');
+}
+                </code>
+                 </pre>
+            Now click the picture, and you should get an alert at the top of your screen
+        </li>
+        <li>
+            <xmp>Now, let's add an input box to get some information from the user.
+                <input type="text" id="name">
+                <input type="button" onclick="sayHi()" value="Say Hi">
+                Note, nothing will happen yet when you click on it</xmp>
+            <input type="text" id="name">
+            <input type="button" onclick="sayHi()" value="Say Hi">
+        </li>
+        <li>
+            <xmp>In your javascript, add a function to handle your button click.</xmp>
+            <pre><code>function sayHi() {
+    var name = document.getElementById('name').value;
+    alert('hello ' + name);
+}
+                    </code>
+                     </pre>
+            Enter a name and click the button. You should get an alert at the top of your screen
+        </li>
+    </ol>
+</body>
